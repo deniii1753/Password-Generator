@@ -64,10 +64,13 @@ div.content .parameters input {
     cursor: pointer;
 }
 
-
-
 #generate-button:hover {
     box-shadow: 0px 0px 10px rgb(255, 0, 0);
+}
+
+#generate-button:active {
+    padding: 11px 21px;
+    box-shadow: 0px 0px 10px rgb(56, 232, 255);
 }
 
 div.generate-password {
@@ -77,4 +80,12 @@ div.generate-password {
 #generated-password {
     width: 250px;
     font-size: 15px;
+}
+
+.valid-password {
+    color: rgb(4, 116, 4);
+}
+
+.invalid-password {
+    color: lightcoral;
 }
