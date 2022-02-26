@@ -15,9 +15,73 @@
         <div class="head">
             <img src="./img/password-key.jpg" alt="password-padlock img" />
             <h1>Generate your password</h1>
-
         </div>
+
         <hr />
+
+        <div class="content">
+            <div class="parameters">
+                <label for="pass-length">Password length: </label>
+                <select name="pass-length-select" id="pass-length">
+                    <optgroup label="Weak">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </optgroup>
+
+                    <optgroup label="Strong">
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="parameters">
+                <label for="include-lowercase">Include Lowercase Characters:</label>
+                <input type="checkbox" name="inc-lowcase" id="include-lowercase" checked/>
+                <span>(e.g. abcdefg)</span>
+            </div>
+
+            <div class="parameters">
+                <label for="include-uppercase">Include Uppercase Characters:</label>
+                <input type="checkbox" name="inc-upcase" id="include-uppercase" checked/>
+                <span>(e.g. ABCDEFG)</span>
+            </div>
+
+            <div class="parameters">
+                <label for="include-numbers">Include Numbers:</label>
+                <input type="checkbox" name="inc-nums" id="include-numbers" checked/>
+                <span>(e.g. 1234567)</span>
+            </div>
+
+            <div class="parameters">
+                <label for="include-symbols">Include Symbols:</label>
+                <input type="checkbox" name="inc-symbols" id="include-symbols" checked/>
+                <span>(e.g. !@#$%^&)</span>
+            </div>
+
+            <div class="parameters">
+                <label for="include-amb-chars">Include Ambiguous:</label>
+                <input type="checkbox" name="inc-a-chars" id="include-amb-chars" />
+                <span>(e.g. {}()`"')</span>
+            </div>
+
+            <div class="parameters">
+                <label for="select">Select:</label>
+                <input type="checkbox" name="auto-select" id="select" />
+                <span>(Automatically select the password)</span>
+            </div>
+        </div>
     </main>
 </body>
 
