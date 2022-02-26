@@ -73,3 +73,8 @@ div.content .parameters input {
 div.generate-password {
     margin-top: 15px;
 }
+
+#generated-password {
+    width: 250px;
+    font-size: 15px;
+}

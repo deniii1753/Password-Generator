@@ -41,7 +41,7 @@
                         <option value="18">18</option>
                         <option value="19">19</option>
                         <option value="20">20</option>
-                        <option value="21">21</option>
+                        <option value="21" selected>21</option>
                     </optgroup>
                 </select>
             </div>
@@ -71,12 +71,6 @@
             </div>
 
             <div class="parameters">
-                <label for="include-amb-chars">Include Ambiguous:</label>
-                <input type="checkbox" name="inc-a-chars" id="include-amb-chars" />
-                <span>(e.g. {}()`"')</span>
-            </div>
-
-            <div class="parameters">
                 <label for="select">Select:</label>
                 <input type="checkbox" name="auto-select" id="select" />
                 <span>(Automatically select the password)</span>
@@ -86,10 +80,12 @@
 
             <div class="generate-password">
                 <label for="generated-password">Your generated password is:</label>
-                <input type="text" />
+                <input type="text" id="generated-password"/>
             </div>
         </div>
     </main>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
