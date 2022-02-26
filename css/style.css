@@ -1,5 +1,5 @@
 body{
-    font-family: 'Consolas';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(34, 34, 34);
 }
 
@@ -14,6 +14,7 @@ main {
     padding-bottom: 50px;
     padding-left: 3vw;
     padding-right: 3vw;
+    position: relative;
 }
 
 div.head {
@@ -37,7 +38,7 @@ div.content .parameters {
     margin-bottom: 10px;
 }
 
-div.content .parameters label {
+label {
     float: left;
     width: 300px;
 }
@@ -63,6 +64,12 @@ div.content .parameters input {
     cursor: pointer;
 }
 
+
+
 #generate-button:hover {
     box-shadow: 0px 0px 10px rgb(255, 0, 0);
+}
+
+div.generate-password {
+    margin-top: 15px;
 }
